@@ -1,0 +1,8 @@
+# Default ignored files
+.vscode/
+.idea/
+__pycache__/
+data/images/
+runs/
+wandb/
+weights/
