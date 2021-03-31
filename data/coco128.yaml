@@ -13,6 +13,9 @@
 train: ../coco/images/train/  # 128 images
 val: ../coco/images/val/  # 128 images
 
+# train: /content/drive/MyDrive/colab_data/coco/images/train/  # 128 images
+# val: /content/drive/MyDrive/colab_data/coco/images/val/  # 128 images
+
 # number of classes
 nc: 12
 
