@@ -468,7 +468,7 @@ if __name__ == '__main__':
     parser.add_argument('--workers', type=int, default=8, help='maximum number of dataloader workers')
     parser.add_argument('--project', default='runs/train', help='save to project/name')
     
-    parser.add_argument('--name', default='uta500m', help='save to project/name')
+    parser.add_argument('--name', default='uta500x', help='save to project/name')
     parser.add_argument('--exist-ok', action='store_true', help='existing project/name ok, do not increment')
     parser.add_argument('--quad', action='store_true', help='quad dataloader')
     parser.add_argument('--linear-lr', action='store_true', help='linear LR')

@@ -10,11 +10,11 @@
 #download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: ../coco/images/train/  # 128 images
-val: ../coco/images/val/  # 128 images
+# train: ../coco/images/train/  # 128 images
+# val: ../coco/images/val/  # 128 images
 
-# train: /content/drive/MyDrive/colab_data/coco/images/train/  # 128 images
-# val: /content/drive/MyDrive/colab_data/coco/images/val/  # 128 images
+train: /content/drive/MyDrive/colab_data/coco/images/train/  # 128 images
+val: /content/drive/MyDrive/colab_data/coco/images/val/  # 128 images
 
 # number of classes
 nc: 12
