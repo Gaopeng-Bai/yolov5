@@ -114,12 +114,12 @@ def Uta_Ocr_detect(
         if i == len(sorted_position) - 1:
             break
         diff = sorted_position[i + 1] - value
-        if diff < 0.018:
+        if diff < 0.01:
             sorted_position.pop(i + 1)
             sorted_labels.pop(i + 1)
 
     return {
-        "text": "".join("."  if e == 10 else str(e) for e in sorted_labels),
+        "text": "".join("." if e == 10 else str(e) for e in sorted_labels),
         "conf": np.mean(averconf),
     }
 
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     with torch.no_grad():
         print(
             Uta_Ocr_detect(
-                weights="runs/train/uta500s/weights/best.pt",
-                path="data/images/A1001001A18B07B41220I08644_0.png",
+                weights="runs/train/uta500l/weights/best.pt",
+                path="data/images/A1001001A18A09A94009A00966_0.png",
             )
         )
